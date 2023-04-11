@@ -10,10 +10,6 @@ $ git clone git@github.com:AlibekBeket/laboratory_68_team_work.git
 ``` 
 $ cd /{имя репозитория}
 ```
-Потом нужно скачать все ветки
-``` 
-$ git pull
-```
 Создаем виртуальное окружение
 ``` 
 $ virtualenv venv
