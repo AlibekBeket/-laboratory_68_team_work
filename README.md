@@ -4,7 +4,7 @@ HeadHunter - сайт для взаимодействия работодател
 ### Запуск проекта локально.
 Для того чтобы запустить проект локально, нужно склонировать проект с гита
 ``` 
-$ git clone git@github.com:AlibekBeket/laboratory_68_team_work.git 
+$ git clone git@github.com:AlibekBeket/laboratory_68_teamwork.git 
 ```
 После нудно зайти в файл репозитория
 ``` 
