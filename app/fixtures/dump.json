@@ -1,5 +1,53 @@
 [
 {
+  "model": "headhunter.resume",
+  "pk": 1,
+  "fields": {
+    "name": "Пробное резюме",
+    "author": 1,
+    "salary": null,
+    "info": "Что-то там",
+    "email": "root@gmail.com",
+    "phone": "8777777777",
+    "telegram": null,
+    "linkedin": null,
+    "facebook": null,
+    "is_published": true,
+    "is_deleted": false,
+    "created_at": "2023-04-20T01:45:47.418Z",
+    "updated_at": "2023-04-20T01:45:47.418Z",
+    "deleted_at": null
+  }
+},
+{
+  "model": "headhunter.experience",
+  "pk": 1,
+  "fields": {
+    "resume": 1,
+    "company": "Tele2",
+    "start_date": "2022-12-01",
+    "job_title": "Маркетолог",
+    "end_date": "2023-04-20",
+    "created_at": "2023-04-20T01:46:33.374Z",
+    "updated_at": "2023-04-20T01:46:33.374Z"
+  }
+},
+{
+  "model": "headhunter.education",
+  "pk": 1,
+  "fields": {
+    "resume": 1,
+    "institution_name": "Кимэп",
+    "speciality": "Маркетиннг",
+    "category_education": "master",
+    "start_date": "2018-07-01",
+    "finish_date": "2022-07-01",
+    "faculty": "Маркетинг",
+    "created_at": "2023-04-20T01:47:44.036Z",
+    "updated_at": "2023-04-20T01:47:44.036Z"
+  }
+},
+{
   "model": "headhunter.vacancycategory",
   "pk": 1,
   "fields": {
