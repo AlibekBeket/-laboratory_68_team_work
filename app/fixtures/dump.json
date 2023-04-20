@@ -1,0 +1,26 @@
+[
+{
+  "model": "headhunter.vacancycategory",
+  "pk": 1,
+  "fields": {
+    "name": "Маркетинг"
+  }
+},
+{
+  "model": "headhunter.vacancy",
+  "pk": 1,
+  "fields": {
+    "vacancy_category": 1,
+    "author": 1,
+    "name": "Маркетолог",
+    "salary": 2000000,
+    "description": "Что-то там",
+    "experience_time": 3,
+    "is_active": true,
+    "created_at": "2023-04-20T00:07:58.699Z",
+    "updated_at": "2023-04-20T00:08:34.737Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+}
+]
