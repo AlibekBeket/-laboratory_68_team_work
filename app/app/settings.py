@@ -77,11 +77,13 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'laboratory_68',
         'USER': 'postgres',
-        'PASSWORD': '2580',
+        'PASSWORD': 'Zhanel27',
         'HOST': 'localhost',
         'PORT': '',
     }
 }
+
+AUTH_USER_MODEL = 'accounts.Account'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
