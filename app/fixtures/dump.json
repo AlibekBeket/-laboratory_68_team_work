@@ -1,74 +1,131 @@
 [
-{
-  "model": "headhunter.resume",
-  "pk": 1,
-  "fields": {
-    "name": "Пробное резюме",
-    "author": 1,
-    "salary": null,
-    "info": "Что-то там",
-    "email": "root@gmail.com",
-    "phone": "8777777777",
-    "telegram": null,
-    "linkedin": null,
-    "facebook": null,
-    "is_published": true,
-    "is_deleted": false,
-    "created_at": "2023-04-20T01:45:47.418Z",
-    "updated_at": "2023-04-20T01:45:47.418Z",
-    "deleted_at": null
+  {
+    "model": "headhunter.experience",
+    "pk": 1,
+    "fields": {
+      "company": "Google",
+      "start_date": "2021-02-03",
+      "job_title": "middle",
+      "end_date": "2023-04-20",
+      "created_at": "2023-04-20T14:44:44.977Z",
+      "updated_at": "2023-04-20T14:44:44.977Z"
+    }
+  },
+  {
+    "model": "headhunter.education",
+    "pk": 1,
+    "fields": {
+      "institution_name": "KBTU",
+      "speciality": "IT",
+      "category_education": "higher",
+      "start_date": "2023-01-20",
+      "finish_date": "2023-04-20",
+      "faculty": "IT",
+      "created_at": "2023-04-20T14:44:05.857Z",
+      "updated_at": "2023-04-20T14:44:05.857Z"
+    }
+  },
+  {
+    "model": "headhunter.resume",
+    "pk": 5,
+    "fields": {
+      "name": "Jhon resume",
+      "author": 4,
+      "salary": 200000.0,
+      "info": "Hello I'm John",
+      "email": "john@gmail.com",
+      "phone": "8700",
+      "telegram": "https://t.me/john",
+      "linkedin": null,
+      "facebook": null,
+      "is_published": false,
+      "is_deleted": false,
+      "created_at": "2023-04-21T15:55:50.810Z",
+      "updated_at": "2023-04-21T15:55:50.810Z",
+      "deleted_at": null,
+      "experience": [
+        1
+      ],
+      "education": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "headhunter.vacancycategory",
+    "pk": 1,
+    "fields": {
+      "name": "IT"
+    }
+  },
+  {
+    "model": "headhunter.vacancy",
+    "pk": 1,
+    "fields": {
+      "vacancy_category": 1,
+      "author": 1,
+      "name": "Python",
+      "salary": 200000,
+      "description": "Python django",
+      "experience_time": 0,
+      "is_active": false,
+      "created_at": "2023-04-20T14:43:26.621Z",
+      "updated_at": "2023-04-20T14:43:26.621Z",
+      "is_deleted": false,
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "headhunter.vacancy",
+    "pk": 2,
+    "fields": {
+      "vacancy_category": 1,
+      "author": 5,
+      "name": "IT spec",
+      "salary": 100000,
+      "description": "Hello Jhon",
+      "experience_time": 0,
+      "is_active": false,
+      "created_at": "2023-04-21T15:56:40.340Z",
+      "updated_at": "2023-04-21T15:56:40.340Z",
+      "is_deleted": false,
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "headhunter.applicantemployer",
+    "pk": 1,
+    "fields": {
+      "applicant": 4,
+      "employer": 5,
+      "vacancy": 2,
+      "resume": 5,
+      "deleted_at": null,
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "headhunter.chat",
+    "pk": 1,
+    "fields": {
+      "applicant_employer_pk": 1,
+      "applicant_or_employer": "applicant",
+      "text": "Hello i need a job",
+      "created_at": "2023-04-21T15:57:16.160Z",
+      "deleted_at": null,
+      "is_deleted": false
+    }
+  },
+  {
+    "model": "headhunter.chat",
+    "pk": 2,
+    "fields": {
+      "applicant_employer_pk": 1,
+      "applicant_or_employer": "employer",
+      "text": "Hello \r\nWe need worker",
+      "created_at": "2023-04-21T15:57:42.772Z",
+      "deleted_at": null,
+      "is_deleted": false
+    }
   }
-},
-{
-  "model": "headhunter.experience",
-  "pk": 1,
-  "fields": {
-    "resume": 1,
-    "company": "Tele2",
-    "start_date": "2022-12-01",
-    "job_title": "Маркетолог",
-    "end_date": "2023-04-20",
-    "created_at": "2023-04-20T01:46:33.374Z",
-    "updated_at": "2023-04-20T01:46:33.374Z"
-  }
-},
-{
-  "model": "headhunter.education",
-  "pk": 1,
-  "fields": {
-    "resume": 1,
-    "institution_name": "Кимэп",
-    "speciality": "Маркетиннг",
-    "category_education": "master",
-    "start_date": "2018-07-01",
-    "finish_date": "2022-07-01",
-    "faculty": "Маркетинг",
-    "created_at": "2023-04-20T01:47:44.036Z",
-    "updated_at": "2023-04-20T01:47:44.036Z"
-  }
-},
-{
-  "model": "headhunter.vacancycategory",
-  "pk": 1,
-  "fields": {
-    "name": "Маркетинг"
-  }
-},
-{
-  "model": "headhunter.vacancy",
-  "pk": 1,
-  "fields": {
-    "vacancy_category": 1,
-    "author": 1,
-    "name": "Маркетолог",
-    "salary": 2000000,
-    "description": "Что-то там",
-    "experience_time": 3,
-    "is_active": true,
-    "created_at": "2023-04-20T00:07:58.699Z",
-    "updated_at": "2023-04-20T00:08:34.737Z",
-    "is_deleted": false,
-    "deleted_at": null
-  }
-}
 ]
