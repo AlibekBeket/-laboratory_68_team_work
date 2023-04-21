@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Headhunter</title>
+</head>
+<body>
+<div class="container">
+    {% for vacancy in vacancies %}
+    <div class="project_info">
+        <p><a href="#">{{ vacancy.name }}</a></p>
+        <p>Salary: {{ vacancy.salary }}</p>
+        <p>Publication date : {{ vacancy.updated_at }}</p>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
