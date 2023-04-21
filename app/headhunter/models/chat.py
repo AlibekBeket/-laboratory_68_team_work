@@ -66,12 +66,12 @@ class Chat(models.Model):
         blank=False,
         on_delete=models.CASCADE
     )
-    applicant_or_employer = models.ForeignKey(
+    applicant_or_employer = models.CharField(
         verbose_name='Кто отправитель',
         choices=ApplicantEmployerChoices.choices,
         max_length=100,
         null=False,
-        blank=False
+        blank=False,
     )
     text = models.TextField(
         verbose_name='Текст сообщения',
